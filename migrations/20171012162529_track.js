@@ -1,7 +1,7 @@
 
 exports.up = function(knex, Promise) {
   return knex.schema.createTable("track", function(table) {
-    table.increments("id")
+    table.increments()
     table.text("name")
   })
 };
